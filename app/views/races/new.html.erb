@@ -1,0 +1,17 @@
+<%= form_for :race, url: races_path do |f| %>
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :date %><br>
+    <%= f.text_field :date %>
+  </p>
+  <p>
+    <%= f.label :time %><br>
+    <%= f.text_field :time %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

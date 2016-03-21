@@ -8,4 +8,7 @@ class RunnersController < ApplicationController
   def create
     @runner = Runner.new
   end
+  def show
+    @runner = Runner.all
+  end
 end
