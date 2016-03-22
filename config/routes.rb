@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
-  
 
-  resources :runners
+
+  resources :runners do
   resources :races
+end
   root 'welcome#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

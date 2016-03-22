@@ -1,6 +1,7 @@
 <h1>log</h1>
 <table>
-<% @races[:id].each do |race| %>
+<%= @runner.name %>
+<% @runner.races.each do |race| %>
     <tr>
       <td><%= race.title %></td>
       <td><%= race.date %></td>

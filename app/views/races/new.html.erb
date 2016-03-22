@@ -2,7 +2,7 @@
 
 
 
-<%= form_for :race, url: races_path do |f| %>
+<%= form_for [@runner, @race] do |f| %>
   <p>
     <%= f.label :title %><br>
     <%= f.text_field :title %>

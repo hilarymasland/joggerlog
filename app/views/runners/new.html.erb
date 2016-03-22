@@ -1,6 +1,6 @@
 <h1>Getting Started</h1>
 <h2>New to Jog Log? Please enter your first and last name!</h2>
-<%= form_for :runner, url: runners_path do |f| %>
+<%= form_for @runner do |f| %>
   <p>
     <%= f.label :name %><br>
     <%= f.text_field :name %>
@@ -10,5 +10,4 @@
     <%= f.submit %>
   </p>
 
-  <%= link_to 'Recent Races', new_race_path %>
 <% end %>

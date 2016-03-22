@@ -1,13 +1,13 @@
 class RunnersController < ApplicationController
   def index
-    @runners = Runner.new
+    @runners = Runner.all
   end
   def new
     @runner = Runner.new
   end
   def create
     @runner = Runner.create!(runner_params)
-    redirect_to new_race_path(@race)
+    redirect_to new_runner_race_path(@runner, @race)
   end
   def show
     @runner = Runner.find(params[:id])
