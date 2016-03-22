@@ -7,10 +7,10 @@ class RunnersController < ApplicationController
   end
   def create
     @runner = Runner.create!(runner_params)
-    redirect_to runner_path(@runner)
+    redirect_to new_race_path(@race)
   end
   def show
-    @runner = Runner.new
+    @runner = Runner.find(params[:id])
   end
   private
   def runner_params

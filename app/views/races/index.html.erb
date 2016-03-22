@@ -1,5 +1,10 @@
-<!-- <ul>
-    <% @race.each do |race| %>
-    <li><%= race.name %></li>
-    <% end %>
-  </ul> -->
+<h1>log</h1>
+<table>
+<% @races[:id].each do |race| %>
+    <tr>
+      <td><%= race.title %></td>
+      <td><%= race.date %></td>
+      <td><%= race.time %></td>
+    </tr>
+  <% end %>
+</table>

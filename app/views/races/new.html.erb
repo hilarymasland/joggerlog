@@ -1,4 +1,7 @@
-<h1>Recent Races</h1>
+<h1>Jog Log</h1>
+
+
+
 <%= form_for :race, url: races_path do |f| %>
   <p>
     <%= f.label :title %><br>
@@ -6,7 +9,7 @@
   </p>
   <p>
     <%= f.label :date %><br>
-    <%= f.text_field :date %>
+    <%= f.date_field :date %>
   </p>
   <p>
     <%= f.label :time %><br>
