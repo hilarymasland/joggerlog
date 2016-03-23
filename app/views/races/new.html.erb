@@ -2,7 +2,7 @@
 
 
 
-<%= form_for [@runner, @race] do |f| %>
+<a class="formcss"><%= form_for [@runner, @race] do |f| %>
   <p>
     <%= f.label :title %><br>
     <%= f.text_field :title %>
@@ -17,5 +17,5 @@
   </p>
   <p>
     <%= f.submit %>
-  </p>
+  </p></a>
 <% end %>

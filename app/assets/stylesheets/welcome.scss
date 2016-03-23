@@ -1,12 +1,37 @@
-body {
-  background-color: white;
-  opacity: inherit;
+@import url(https://fonts.googleapis.com/css?family=Amaranth:400,700italic,400italic,700);
+
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+
+html {
+  background: url(runshoes.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
+// body {
+//   background-image: url("runshoes.jpg");
+//   background-attachment: fixed;
+//   width: 500%;
+// }
+
 h1 {
-  color: purple;
+  color: black;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 48px;
+  text-align: center;
 }
 
-
+.new_user_prompt {
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 20px;
+  color: white;
+}
+.name {
+  font-family: 'Droid Sans', sans-serif;
+  color: white;
+  font-size: 18px;
+}
 
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.

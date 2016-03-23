@@ -1,13 +1,14 @@
-<h1>Getting Started</h1>
-<h2>New to Jog Log? Please enter your first and last name!</h2>
-<%= form_for @runner do |f| %>
-  <p>
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </p>
+    <h1>Getting Started</h1>
 
-  <p>
-    <%= f.submit %>
-  </p>
+    <div class="new_user_prompt">New to Jog Log? Please enter your first and last name!</div>
+    <%= form_for @runner do |f| %>
+    <p class="name">
+      <%= f.label :name %><br>
+      <%= f.text_field :name %>
+    </p>
 
-<% end %>
+    <p>
+      <%= f.submit %>
+    </p>
+
+    <% end %>
