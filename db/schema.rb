@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20160322122643) do
 
   create_table "races", force: :cascade do |t|
     t.string  "title"
-    t.date    "date"
+    t.string  "date"
     t.string  "time"
     t.integer "runner_id"
   end

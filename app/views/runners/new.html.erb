@@ -8,7 +8,8 @@
   <div class="div_top">
     <h1>Getting Started</h1>
   </div>
-    <div class="new_user_prompt">New to Jog Log? Please enter your first and last name!</div>
+    <div class="new_user_prompt">New to Jog Log? Please enter your name!</div>
+    <div class="form">
     <%= form_for @runner do |f| %>
     <p class="name">
       <%= f.label :name %><br>
@@ -20,5 +21,6 @@
     </p>
 
     <% end %>
+  </div>
 </body>
 </html>

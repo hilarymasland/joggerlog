@@ -9,7 +9,7 @@
   <h1>Edit Races</h1>
 </div>
 
-
+<div class="form">
   <%= form_for [@runner, @race] do |f| %>
   <p>
     <%= f.label :title %><br>
@@ -24,11 +24,12 @@
     <%= f.text_field :time %>
   </p>
   <p>
-    <%= f.submit %>
+    <%= f.submit "Update", :class => "form-button" %>
   </p>
   <% end %>
   <%= form_for [@runner, @race], method: :delete do |f| %>
-  <%= f.submit "Delete!", class: "delete" %>
+  <%= f.submit "Delete", :class => "form-button" %>
   <% end %>
+</div>
 </body>
 </html>
