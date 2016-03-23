@@ -2,22 +2,15 @@
 
 @import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
 
-html {
-  background: url(runshoes.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+$accent-color: #9966FF;
+$body-text: "Droid Sans", sans-serif;
+
+body {
+  margin: 0;
 }
-// body {
-//   background-image: url("runshoes.jpg");
-//   background-attachment: fixed;
-//   width: 500%;
-// }
 
 h1 {
-  color: black;
-  font-family: 'Droid Sans', sans-serif;
+  font-family: $body-text;
   font-size: 48px;
   text-align: center;
 }
@@ -33,6 +26,52 @@ h1 {
   font-size: 18px;
 }
 
-// Place all the styles related to the welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.container {
+  width: 100%;
+}
+
+.content {
+  text-align: center;
+}
+
+.div_top{
+  background-image: url("http://www.newbridgerecovery.com/wp-content/uploads/2015/11/BANNER-Man-running-silhouette-Flipped1.jpg");
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form {
+  font-family: $body-text;
+  text-align: center;
+}
+
+.button {
+  background-color: black;
+  display: inline-block;
+
+  a:link, a:active, a:visited {
+    border: 2px solid $accent-color;
+    padding: 5px;
+    color: $accent-color;
+    text-decoration: none;
+    font-family: $body-text;
+    text-transform: uppercase;
+  }
+
+  a:hover {
+    background-color: $accent-color;
+    color: black;
+    padding: 5px;
+    border: 2px solid $accent-color;
+    transition: 1s;
+  }
+}
+.form-button {
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+}

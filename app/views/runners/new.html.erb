@@ -1,5 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+  <div class="div_top">
     <h1>Getting Started</h1>
-
+  </div>
     <div class="new_user_prompt">New to Jog Log? Please enter your first and last name!</div>
     <%= form_for @runner do |f| %>
     <p class="name">
@@ -8,7 +16,9 @@
     </p>
 
     <p>
-      <%= f.submit %>
+      <%= f.submit "Create Runner", :class => "form-button"%>
     </p>
 
     <% end %>
+</body>
+</html>

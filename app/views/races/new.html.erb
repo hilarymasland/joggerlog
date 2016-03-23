@@ -1,21 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="div_top">
 <h1>Jog Log</h1>
+</div>
 
-
-
-<a class="formcss"><%= form_for [@runner, @race] do |f| %>
-  <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </p>
-  <p>
-    <%= f.label :date %><br>
-    <%= f.date_field :date %>
-  </p>
-  <p>
-    <%= f.label :time %><br>
-    <%= f.text_field :time %>
-  </p>
-  <p>
-    <%= f.submit %>
-  </p></a>
-<% end %>
+<div class="form">
+  <%= form_for [@runner, @race] do |f| %>
+    <p>
+      <%= f.label :title %><br>
+      <%= f.text_field :title %>
+    </p>
+    <p>
+      <%= f.label :date %><br>
+      <%= f.date_field :date %>
+    </p>
+    <p>
+      <%= f.label :time %><br>
+      <%= f.text_field :time %>
+    </p>
+    <p>
+      <%= f.submit "Submit", :class => "form-button" %>
+    </p>
+  <% end %>
+</div>
+</body>
+</html>

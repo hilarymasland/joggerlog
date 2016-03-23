@@ -1,20 +1,37 @@
-<h1><%= @runner.name %>'s Jog Log</h1>
-<div class="styletable">
-<table class="flat-table", align="center">
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+  <div class="container">
+    <div class="div_top">
+      <div class="header-text"><h1><%= @runner.name %>'s Jog Log</h1></div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="styletable">
+      <table class="flat-table", align="center">
 
-<% @runner.races.each do |race| %>
-<thead>
-		<th>Race Name</th>
-		<th>Date</th>
-		<th>Finish Time</th>
-	</thead>
-    <tr>
-      <td><%= race.title %></td>
-      <td><%= race.date %></td>
-      <td><%= race.time %></td>
-      <td><%= link_to 'edit', edit_runner_race_path(@runner, race) %></td>
-    </tr>
-  <% end %>
-</table>
-<%= link_to 'Add New Race', new_runner_race_path(@runner, @race) %>
-</div>
+        <% @runner.races.each do |race| %>
+        <thead>
+          <th>Race Name</th>
+          <th>Date</th>
+          <th>Finish Time</th>
+        </thead>
+        <tr>
+          <td><%= race.title %></td>
+          <td><%= race.date %></td>
+          <td><%= race.time %></td>
+          <td><%= link_to 'edit', edit_runner_race_path(@runner, race) %></td>
+        </tr>
+        <% end %>
+      </table>
+    </div>
+
+    <div class="button"><%= link_to 'Add New Race', new_runner_race_path(@runner, @race) %></div>
+  </div>
+
+</body>
+</html>

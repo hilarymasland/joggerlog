@@ -2,45 +2,19 @@ h1 {
   color: white;
 }
 
-table {
-  color: orange;
+body{
+  background-color: black;
 }
-html {
-  background: url(runshoes.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+
 .form{
   font-size: 30px;
 }
-// table {
-//     border-collapse: collapse;
-//     background-color: black;
-//     color: white;
-//     width: 50%;
-//     align-items: center;
-//     margin-left: 60px;
-//     margin-right: 60px;
-//     margin-top: 10px;
-//     margin-bottom: 10px;
-// }
-//
-//
-// table, th, td {
-//     border: 1px;
-// }
-// .styletable {
-//   background-color: black;
-//   color: yellow;
-//   margin-left: 250px;
-//   margin-right: 250px;
-//   margin-top: 10px;
-//   margin-bottom: 10px;
-//   padding-top: 50px;
-//   padding-bottom: 50px;
-// }
+
+
+.div_mid{
+  background-color:black;
+
+}
 
 
 	.flat-table {
@@ -77,7 +51,7 @@ html {
 		transition: background 0.3s, box-shadow 0.3s;
 	}
 	.flat-table {
-		background: #336ca6;
+		background: #FFCC33;
 	}
 	.flat-table tr:hover {
 		background: rgba(0,0,0,0.19);
