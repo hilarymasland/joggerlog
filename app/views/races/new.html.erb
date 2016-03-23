@@ -1,17 +1,17 @@
 
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <div class="div_top">
-<h1>Jog Log</h1>
-</div>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+  <div class="div_top">
+    <h1>Jog Log</h1>
+  </div>
 
-<div class="form">
-  <%= form_for [@runner, @race] do |f| %>
+  <div class="form">
+    <%= form_for [@runner, @race] do |f| %>
     <p>
       <%= f.label :title %><br>
       <%= f.text_field :title %>
@@ -27,7 +27,7 @@
     <p>
       <%= f.submit "Submit", :class => "form-button" %>
     </p>
-  <% end %>
-</div>
+    <% end %>
+  </div>
 </body>
 </html>
