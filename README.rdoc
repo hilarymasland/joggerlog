@@ -1,5 +1,20 @@
 == README
 
+Technologies:
+Ruby
+Rails
+css
+HTML
+
+Installation:
+fork and clone this repo
+CD into a folder where you would like to save this file
+run rails s
+bundle install
+go to http://localhost:3000/ in your browser
+
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
